@@ -11,10 +11,11 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "yarn build && yarn start",
-    "lint": "eslint --fix -c .eslintrc.js --ext .ts src tests",
+    "lint": "eslint . --fix -c .eslintrc.js --ext .ts",
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.1",
     "pg": "^8.2.1"
